@@ -1,0 +1,1328 @@
+/* patrones globales de css */
+
+/* tipo titulo, subtitulos, enlaces y botnes: Oswald */
+h1,h2,h3,h4,h5,h6,a,button {font-family: 'Oswald', sans-serif;}
+
+/* tipo parrafos: almarai */
+p,span,strong,em,div{font-family: 'Almarai', sans-serif;}
+
+/* quitar margen por defecto de body */
+body{ margin: 0 auto;}
+
+/* quitar margen de títulos y parrafos */
+h1,h2,h3,h4,h5,h6,p,figure {margin: 0;}
+
+/* configuracion de estilo propio */
+
+/* propiedade display block */
+header,aside,main,footer,section,article,figure,nav{display: block;}
+
+aside#menu-responsive{
+    width: 290px;
+    height: 100%;
+    display: none;
+    margin: 0;
+    float: none;
+    position: fixed;
+    top: 0;
+    left: -290px;
+    z-index:99998;
+    background: #212121; 
+ }
+aside#menu-responsive a#abrir{
+    width: 35px;
+    height: auto;
+    display: block;
+    margin: 0;
+    float: none;
+    position: absolute;
+    top: 20px;
+    right: -35px;
+    z-index: 1;
+    color: #F3F3F4;
+    background: #F1AA2F;
+    font-size: 1.25em;
+    line-height: 1em;
+    text-align: center;
+    padding: 7px 0;
+    transition: all 0.3s ease-in; 
+}
+aside#menu-responsive a#abrir:hover{ 
+    background: #fff;
+    color: #f1aa2f;
+    transition: all 0.3s ease-in; 
+}
+aside#menu-responsive a#cerrar{
+    width: 35px;
+    height: auto;
+    display: none;
+    margin: 0;
+    float: none;
+    position: absolute;
+    top: 20px;
+    right: -35px;
+    z-index: 2;
+    color: #F3F3F4;
+    background: #F1AA2F;
+    font-size: 1.25em;
+    line-height: 1em;
+    text-align: center;
+    padding: 7px 0;
+    transition: all 0.3s ease-in; 
+}
+aside#menu-responsive a#cerrar:hover{
+    background: #fff;
+    color: #f1aa2f;
+    transition: all 0.3s ease-in;
+}
+aside#menu-responsive nav{
+    width: 58%; 
+    height: auto; 
+    display: block; 
+    margin: 25px auto 0 auto; 
+    float: none; 
+    position: relative;
+}
+aside#menu-responsive nav a{
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+    float: none; 
+    position: relative;
+    
+    font-size: 0.75em; 
+    line-height: 1em; 
+    color: #fff; 
+    text-decoration: none; 
+    padding: 14px 0; 
+    text-align: right;
+}
+aside#menu-responsive nav a:hover{
+    color: #F1aa2f;
+    border-bottom: solid 1px #F3F3F4;
+    transition: all 0.3s ease-in;
+}
+aside#boton-whatsapp {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    float: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index:99996;   
+}    
+aside#boton-whatsapp a {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    color: #fff;
+    background: #15c415;
+    border-radius: 50%;
+    font-size: 1.55em;
+    line-height: 1em;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease-in;
+}
+aside#boton-whatsapp a:hover{
+    color: #15c415;
+    background: #212121;
+    transition: all 0.3s ease-in;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    margin: 0;
+    float: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:99995;
+    background: #212121;
+}
+header article{
+    width: 1100px;
+    height: 80px;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+}
+
+header article figure {
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin: 5px 0;
+    float: left;
+    position: relative;
+    
+}
+header article figure a {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    transition: all 0.3s ease-in;
+}
+header article figure a img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    transition: all 0.3s ease-in;
+}
+header article figure a:hover{
+    opacity: 0.8;
+    transition: all 0.3s ease-in;
+}
+
+header article nav{
+    width: 700px;
+    height: 30px;
+    display: block;
+    margin: 25px 0;
+    float: right;
+    position: relative;
+}
+header article nav a{
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0px 15PX;
+    float: left;
+    position: relative;
+    color: #fff;
+    font-size: 1em;
+    line-height: 1em;
+    text-decoration: none;
+    padding: 8px 0;
+    font-weight: 300;
+    letter-spacing: 0.07em;
+}
+
+header article nav a:hover{
+    color: #F1AA2F;
+    border-bottom: solid 2px #F1AA2F;
+    transition: all 0.3s ease-in;
+}
+
+header article nav a.activo{
+    color: #F1AA2F;
+    border-bottom: solid 2px #F1AA2F;
+    transition: all 0.3s ease-in;
+}
+
+main{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 80px auto 0 auto;
+    float: none;
+    position: relative;
+} 
+main section#banner{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+}
+main section#banner article{
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    background: linear-gradient(rgb(241 170 47 / 0%), rgb(241 170 47 / 75%)), url(../img/fondos/img-fondo-sección\ 1-pag-inicio.png) no-repeat top center #F1AA2F;
+    background-size: cover;
+}
+main section#banner article h1{
+    text-align: left;
+    text-decoration: none;
+    padding: 14% 21% 0;
+    color: #fff;
+    font-size: 3.5em;
+    margin: 0;
+    font-weight: 400;
+ 
+}
+main section#banner article h2{
+    text-align: left;
+    text-decoration: none;
+    padding: 0px 0px 8px 21%;
+    color: #fff;
+    font-size: 1.5em;
+    margin: 0;
+    font-weight: 400;
+    letter-spacing: 0.020em;
+}
+main section#banner article a{
+    width: 100px;
+    height: auto;
+    margin: 0 0 0 21%;
+    float: none;
+    display: block;
+    position: relative;
+    color: #F1AA2F;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 5px 16px;
+    border-radius: 20px;
+    background: #212121;
+}
+main section#banner article  a:hover{
+    color: #212121;
+    background: #F1AA2F;
+    transition: all 0.3s ease-in;
+}
+
+main section#perfil{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+}
+main section#perfil article{
+    width: 1100px;
+    height: 600px;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+}
+main section#perfil article figure{
+    width: 500px;
+    height: 420px;
+    display: block;
+    margin: 0 auto;
+    float: left;
+    position: relative;
+    padding: 90px 0;
+}
+main section#perfil article figure#texto-perfil{
+    width: 500px;
+    height: 420px;
+    display: block;
+    margin: 0 auto;
+    float: right;
+    position: relative;
+    padding: 90px 0;
+}
+main section#perfil article figure img{
+    width: 500px;
+    height: 420px;
+    display: block;
+    margin: 0 auto;
+    float: left;
+    position: relative;
+}
+main section#perfil article figure h3{
+    margin: 100px 0 0 0;
+    display: block;
+    font-size: 2.2em;
+    text-align: center;
+}
+main section#perfil article figure p{
+    margin: 8px 0 25px 0;
+    display: block;
+    font-size: 1.1em;
+    text-align: center;
+    color: black;
+}
+main section#perfil article figure a{
+    width: 100px;
+    height: auto;
+    margin: 0 0 0 37%;
+    float: none;
+    display: block;
+    position: relative;
+    color: #F1AA2F;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 400;
+    padding: 5px 16px;
+    border-radius: 20px;
+    background: #212121;
+}
+main section#perfil article figure a:hover{
+    color: #212121;
+    background: #F1AA2F;
+    transition: all 0.3s ease-in;
+}
+
+main section#servicios{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    background:#cecece
+}
+main section#servicios article{
+    width: 1100px;
+    height: 600px;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+}
+main section#servicios article figure{
+    width: 500px;
+    height: 420px;
+    display: block;
+    margin: 0 auto;
+    float: left;
+    position: relative;
+    padding: 42px 0;
+}
+main section#servicios article figure#fotografia-comercial{
+    width: 500px;
+    height: 420px;
+    display: block;
+    margin: 0 auto;
+    float: right;
+    position: relative;
+    padding: 42px 0;
+}
+main section#servicios article figure img{
+    width: 500px;
+    height: 420px;
+    display: block;
+    margin: 0 auto;
+    float: left;
+    position: relative;
+}
+main section#servicios article figure h1{
+    margin: 0;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 300;
+    color: #212121;
+    background: #f1aa2f;
+}
+main section#servicios article figure a{
+    width: 100px;
+    height: auto;
+    margin: 16px 34%;
+    float: none;
+    display: block;
+    position: relative;
+    color: #f1aa2f;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 5px 16px;
+    border-radius: 20px;
+    background: #212121;
+}
+main section#servicios article figure a:hover{
+    color: #212121;
+    background: #F1AA2F;
+    transition: all 0.3s ease-in;
+}
+
+main section#portafolio {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    background:#fff
+}
+main section#portafolio article {
+    width: 1100px;
+    height: 650px;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+}
+main section#portafolio article figure {
+    width: 500px;
+    height: 420px;
+    display: block;
+    margin: 0 auto;
+    float: left;
+    position: relative;
+    padding: 115px 0;
+}
+main section#portafolio article figure#imagen-arriba{
+    width: 500px;
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+    float: right;
+    position: relative;
+    padding: 70px 0 0 0;
+}
+main section#portafolio article figure#imagenes-abajo{
+    width: 500px;
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+    float: right;
+    position: relative;
+    padding: 0 0 70px 0;
+}
+main section#portafolio article figure#imagen-arriba img{
+    width: 500px;
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+    float: right;
+    position: relative;
+}
+main section#portafolio article figure#imagenes-abajo img{
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+    float: right;
+    position: relative;
+}
+main section#portafolio article figure#imagenes-portafolio img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    float: right;
+    position: relative;
+}
+main section#portafolio article figure h5 {
+    margin: 100px 0 0 0;
+    display: block;
+    font-size: 2.2em;
+    text-align: center;
+}
+main section#portafolio article figure p {
+    display: block;
+    font-size: 1.1em;
+    text-align: center;
+    color: black;
+    margin: 15px 0;
+
+}
+main section#portafolio article figure a {
+    width: 100px;
+    height: auto;
+    margin: 16px 36%;
+    float: none;
+    display: block;
+    position: relative;
+    color: #F1AA2F;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 5px 16px;
+    border-radius: 20px;
+    background: #212121;
+}
+main section#portafolio article figure a:hover {
+    color: #212122;
+    background: #F1AA2F;
+    transition: all 0.3s ease-in;
+}
+main section#contactame { 
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+   background: #cecece;
+}
+main section#contactame div{
+    width: 100%;
+    height: 1px;
+    margin: 0 ;
+    float: none;
+    position: absolute;
+    top: -80px;
+    left: 0;
+    padding:0;
+    background:transparent;
+}
+main section#contactame article {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    padding: 80px 0;
+}
+main section#contactame article p {
+    text-align: center;
+    font-size: 1.4em;
+    line-height: 1em;
+    color: #212121;
+    padding: 0 0 20px;
+    letter-spacing: 0.030em;
+}
+main section#contactame article nav {
+    width: 290px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+}
+main section#contactame article nav a {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 16px;
+    float: none;
+    position: relative;
+    border: solid 2px #212121;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 0;
+    background: rgb(33 33 33);
+    transition: all 0.3s ease-in;
+    font-size: 1.2em;
+    letter-spacing: 0.020em;
+    border-radius: 30px;
+}
+main section#contactame article nav a:hover {
+    color: #F1AA2F;
+    background: #212121;
+    transition: all 0.3s ease-in;
+}
+main section#banner-2{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+}
+main section#banner-2 article{
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    background: linear-gradient(rgb(241 170 47 / 60%), rgb(241 170 47 / 80%)), url(../img/fondos/img-fondo-sección\ 1-pag-inicio.png) no-repeat top center #F1AA2F;
+    background-size: cover;
+}
+
+main section#banner-2 article h1{
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 3.5em;
+    margin: 0;
+    font-weight: 500;
+    padding: 7px 0 0;
+}
+main section#fotografia-1{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    background: #cecece;
+}
+main section#fotografia-1 article{
+    width: 1100px;
+    height: 500px;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+}
+main section#fotografia-1 article figure#fotog-1 {
+    width: 500px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+    float: left;
+    position: relative;
+    padding:80px 0 0 0;
+}
+main section#fotografia-1 article figure#fotog-1 img {
+    width: 250px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    float: left;
+    position: relative;
+}
+main section#fotografia-1 article figure#fotog-1 h3 {
+    margin:  0;
+    display: block;
+    font-size: 2.2em;
+    text-align: center;
+}
+
+main section#fotografia-1 article figure#fotog-2 {
+    width: 500px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+    float: right;
+    position: relative;
+    padding:80px 0 0 0;
+}
+main section#fotografia-1 article figure#fotog-2 img {
+    width: 250px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    float: left;
+    position: relative;
+}
+main section#fotografia-1 article figure#fotog-2 h3 {
+    margin:  0;
+    display: block;
+    font-size: 2.2em;
+    text-align: center;
+}
+main section#fotografia-2{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+}
+main section#fotografia-2 article{
+    width: 1100px;
+    height: 500px;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+}
+main section#fotografia-2 article figure#fotog-3 {
+    width: 500px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+    float: left;
+    position: relative;
+    padding:80px 0 0 0;
+}
+main section#fotografia-2 article figure#fotog-3 img {
+    width: 250px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    float: left;
+    position: relative;
+}
+main section#fotografia-2 article figure#fotog-3 h3 {
+    margin:  0;
+    display: block;
+    font-size: 2.2em;
+    text-align: center;
+}
+
+main section#fotografia-2 article figure#fotog-4 {
+    width: 500px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+    float: right;
+    position: relative;
+    padding:80px 0 0 0;
+}
+main section#fotografia-2 article figure#fotog-4 img {
+    width: 250px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    float: left;
+    position: relative;
+}
+main section#fotografia-2 article figure#fotog-4 h3 {
+    margin:  0;
+    display: block;
+    font-size: 2.2em;
+    text-align: center;
+}
+main section#banner-3{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+}
+main section#banner-3 article{
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    background: linear-gradient(rgb(241 170 47 / 60%), rgb(241 170 47 / 80%)), url(../img/fondos/img-fondo-sección\ 1-pag-inicio.png) no-repeat top center #F1AA2F;
+    background-size: cover;
+}
+main section#banner-3 article h1{
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 3.5em;
+    margin: 0;
+    font-weight: 500;
+    padding: 7px 0 0;
+}
+
+main section#servicios1{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    background: #cecece;
+}
+main section#servicios1 article{
+    width: 1100px;
+    height: 500px;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+}
+main section#servicios1 article figure#img-primeras {
+    width: 500px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+    float: left;
+    position: relative;
+    padding:50px 0;
+}
+main section#servicios1 article figure#img-primeras img {
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+    float: left;
+    position: relative;
+}
+main section#servicios1 article figure#img-primeras h3 {
+    margin:  0;
+    display: block;
+    font-size: 2.2em;
+    text-align: center;
+}
+main section#servicios1 article figure#img-primeras p {
+    margin: 10px 0 0 0;
+    display: block;
+    font-size: 1.3em;
+    text-align: center;
+    color: black;
+}
+main section#servicios1 article figure#img-segundas {
+    width: 500px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+    float: right;
+    position: relative;
+    padding:50px 0;
+}
+main section#servicios1 article figure#img-segundas img {
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+    float: right;
+    position: relative;
+}
+main section#servicios1 article figure#img-segundas h3 {
+    margin: 0;
+    display: block;
+    font-size: 2.2em;
+    text-align: center;
+}
+main section#servicios1 article figure#img-segundas p {
+    margin: 10px 0 0 0;
+    display: block;
+    font-size: 1.3em;
+    text-align: center;
+    color: black;
+}
+
+main section#servicios2{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+}
+main section#servicios2 article{
+    width: 1100px;
+    height: 500px;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+}
+main section#servicios2 article figure#img-terceras {
+    width: 500px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+    float: left;
+    position: relative;
+    padding:50px 0;
+}
+main section#servicios2 article figure#img-terceras img {
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+    float: left;
+    position: relative;
+}
+main section#servicios2 article figure#img-terceras h3 {
+    margin:  0;
+    display: block;
+    font-size: 2.2em;
+    text-align: center;
+}
+main section#servicios2 article figure#img-terceras p {
+    margin: 10px 0 0 0;
+    display: block;
+    font-size: 1.3em;
+    text-align: center;
+    color: black;
+}
+main section#servicios2 article figure#img-cuartas {
+    width: 500px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+    float: right;
+    position: relative;
+    padding:50px 0;
+}
+main section#servicios2 article figure#img-cuartas img {
+    width: 420px;
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+    float: right;
+    position: relative;
+    padding: 0 40px;
+}
+main section#servicios2 article figure#img-cuartas h3 {
+    margin: 0;
+    display: block;
+    font-size: 2.2em;
+    text-align: center;
+}
+main section#servicios2 article figure#img-cuartas p {
+    margin: 10px 0 0 0;
+    display: block;
+    font-size: 1.3em;
+    text-align: center;
+    color: black;
+}
+main section#banner-4{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+}
+main section#banner-4 article{
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    background: linear-gradient(rgb(241 170 47 / 60%), rgb(241 170 47 / 80%)), url(../img/fondos/img-fondo-sección\ 1-pag-inicio.png) no-repeat top center #F1AA2F;
+    background-size: cover;
+}
+
+main section#banner-4 article h1{
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 3.5em;
+    margin: 0;
+    font-weight: 500;
+    padding: 7px 0 0;
+}
+main section#fotos-portafolio { 
+    width: 100%; 
+    height: auto; 
+    float: none; 
+    display: block; 
+    margin: 0 auto 90px; 
+    position: relative; }
+main section#fotos-portafolio article { 
+    width: 1100px; 
+    height: auto; 
+    float: none; 
+    display: block; 
+    margin: 0 auto; 
+    position: relative; 
+    padding: 50px 0 0 0; }
+main section#fotos-portafolio article nav { 
+    width: 90%; 
+    height: auto; 
+    float: none; 
+    display: block; 
+    margin: 0 auto; 
+    position: relative; }
+main section#fotos-portafolio article nav a { 
+    width: 280px; 
+    height: auto; 
+    float: none; 
+    display: inline-block; 
+    margin: 20px; 
+    position: relative; 
+    overflow: hidden; 
+    transition: all 0.3s ease-in; }
+main section#fotos-portafolio article nav a img { 
+    width: 100%; 
+    height: auto; 
+    float: none;
+    display: block; 
+    margin: 0 auto; 
+    position: relative; 
+    transition: all 0.3s ease-in; }
+main section#fotos-portafolio article nav a:hover { 
+    opacity: 0.8; 
+    transition: all 0.3s ease-in; }
+main section#fotos-portafolio article nav a:hover img { 
+    transform: scale(1.03); 
+    transition: all 0.3s ease-in; }
+
+.fancybox-container { z-index: 99999 !important; }
+
+footer{
+    width: 100%;
+    height: auto;
+    margin:0 auto ;
+    float: none;
+    position: relative;
+    background: #212121;
+}
+footer article {
+    width:80%;
+    height: auto;
+    margin:0 auto;
+    float: none;
+    position: relative;
+    padding: 90px 0;
+}
+footer article > a {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+}
+footer article > a img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    float: none;
+    position: relative;
+}
+footer article > a :hover {
+    
+}
+
+footer article nav {
+    width: 162px;
+    height: 34px;
+    margin: 10px auto 0 auto;
+    display: block;
+    float: none;
+    position: relative;
+}
+footer article nav a {
+    width: 50px;
+    height: auto;
+    display: block;
+    margin: 0 2px;
+    float: left;
+    position: relative;
+    color: #F1AA2F;
+    font-size: 2em;
+    line-height: 1em;
+    text-align: center;
+    padding: 7px 0;
+    transition: all 0.3s ease-in;
+}
+
+footer article nav a :hover{
+
+}
+
+@media only screen and (max-width: 1199px){
+    aside#menu-responsive{display: none;}
+    header article { width: 1000px; }
+    main section#banner article h1 {padding: 14% 8% 0;}
+    main section#banner article h2 {padding: 0px 0px 8px 8%;}
+    main section#banner article a {margin: 0 0 0 8%;}
+    main section#perfil article{ width: 1000px;}
+    main section#perfil article figure#texto-perfil{width: 460px;}
+    main section#servicios article{ width: 1000px;}
+    main section#servicios article figure{ width: 450px;}
+    main section#servicios article figure img {width: 450px;}
+    main section#servicios article figure h1{ padding: 0;}
+    main section#servicios article figure#fotografia-comercial {width: 450px;}
+    main section#servicios article figure#fotografia-comercial img {width: 450px;}
+    main section#portafolio article {width: 1000px;}
+    main section#portafolio article figure {width: 450px;}
+    main section#portafolio article figure#imagen-arriba {width: 450px;}
+    main section#portafolio article figure#imagen-arriba img {width: 450px;}
+    main section#portafolio article figure#imagenes-abajo {width: 450px;}
+    main section#portafolio article figure#imagenes-abajo img {width: 225px;height: 225px;}
+
+@media only screen and (max-width: 899px){
+    header article {width: 800px;}
+    header article nav {width: 660px;}
+    header article nav a {margin: 0px 10px;}
+    main section#banner article {height: 470px;}
+    main section#banner article h1 { padding: 22% 8% 0; text-align: center;}
+    main section#banner article h2 {text-align: center; padding: 0px 0px 8px 0%;}
+    main section#banner article a {margin: 0px 0 0 42%;}
+    main section#perfil article {width: 800px; height: 462px;}
+    main section#perfil article figure {width: 350px; height: auto; padding: 80px 0;}
+    main section#perfil article figure img {width: 350px;height: auto;}
+    main section#perfil article figure#texto-perfil {width: 350px;height: auto;padding: 80px 0;}
+    main section#perfil article figure h3 {margin: 35px 0 0 0;}
+    main section#perfil article figure a {margin: 0 0 0 30%;}
+    main section#servicios article {width: 800px;height: 520px;}
+    main section#servicios article figure {width:350px; height: 335px;padding: 45px 0;}
+    main section#servicios article figure img {width: 350px; height: 335px;}
+    main section#servicios article figure#fotografia-comercial {width: 350px; height: 335px;}
+    main section#servicios article figure#fotografia-comercial img {width: 350px; height: 335px;}
+    main section#servicios article figure a {margin: 16px 30%;}
+    main section#portafolio article {width: 800px; height: 400px;}
+    main section#portafolio article figure {width: 350px; height: 400px; padding:0 ;}
+    main section#portafolio article figure a {margin: 16px 31%;}
+    main section#portafolio article figure#imagen-arriba {width: 350px;height: 180px;padding: 20px 0 0 0;}
+    main section#portafolio article figure#imagen-arriba img {width:350px;height: 180px;}
+    main section#portafolio article figure#imagenes-abajo {width: 350px;height: 180px;}
+    main section#portafolio article figure#imagenes-abajo img{width:175px;
+    height: 175px;}
+    main section#contactame article {padding: 40px 0;}
+    main section#servicios1 article {width: 80%;height: 430px}
+    main section#servicios1 article figure#img-primeras {width: 40%;height: auto;padding: 50px 0 0 0;}
+    main section#servicios1 article figure#img-segundas {width: 40%;height: auto;padding: 50px 0 0 0;}
+    main section#servicios1 article figure#img-primeras img{width: 50%;height: auto;}
+    main section#servicios1 article figure#img-primeras h3 {font-size: 1.5em;}
+    main section#servicios1 article figure#img-primeras p {font-size: 1.1em;}
+    main section#servicios1 article figure#img-segundas img {width: 50%;height: auto;}
+    main section#servicios1 article figure#img-segundas h3 {font-size: 1.5em;}
+    main section#servicios1 article figure#img-segundas p {font-size: 1.1em;}
+    main section#servicios2 article {width: 80%;height: 430px}
+    main section#servicios2 article figure#img-terceras {width:40%;height: auto;padding: 50px 0 0 0;}
+    main section#servicios2 article figure#img-cuartas {width:40%;height: auto;padding: 50px 0 0 0;}
+    main section#servicios2 article figure#img-terceras img{width: 50%;height: auto;}
+    main section#servicios2 article figure#img-cuartas img{width: 100%;height: auto; padding: 0;}
+    main section#servicios2 article figure#img-terceras h3 {font-size: 1.5em;}
+    main section#servicios2 article figure#img-cuartas h3 {font-size: 1.5em;}
+    main section#servicios2 article figure#img-terceras p {font-size: 1.1em;}
+    main section#servicios2 article figure#img-cuartas p {font-size: 1.1em;}
+    main section#fotografia-1 article {width: 80%;
+    height: 400px;}
+    main section#fotografia-1 article figure#fotog-1 {width: 45%;height: auto;}
+    main section#fotografia-1 article figure#fotog-1 img {width: 50%;height: auto;}
+    main section#fotografia-1 article figure#fotog-2 {width: 45%;height: auto;}
+    main section#fotografia-1 article figure#fotog-2 img {width: 50%;height: auto;}
+    main section#fotografia-2 article {width: 80%;
+    height: 400px;}
+    main section#fotografia-2 article figure#fotog-3 {width: 45%;height: auto;}
+    main section#fotografia-2 article figure#fotog-3 img {width: 50%;height: auto;}
+    main section#fotografia-2 article figure#fotog-4 {width: 45%;height: auto;}
+    main section#fotografia-2 article figure#fotog-4 img {width: 50%;height: auto;}
+    main section#fotos-portafolio article {width: 100%;}
+    main section#fotos-portafolio article nav {width: 90%;}
+    main section#fotos-portafolio article nav a {width: 30%;margin: 11px;}
+}
+@media only screen and (max-width: 799px){
+    aside#menu-responsive {display: block;}
+    aside#menu-responsive nav a {font-size: 1.3em;}
+    aside#menu-responsive nav {width: 85%;margin: 24px 0 0 0;}
+    header article { width: 95%; }
+    header article nav {display: none;}
+    header article figure {margin: 5px 46%;}
+    main section#banner article {height: 400px;}
+    main section#perfil article {width: 700px;}
+    main section#perfil article figure {width: 320px;padding: 93px 0;}
+    main section#perfil article figure img {width: 320px;}
+    main section#perfil article figure#texto-perfil {width: 320px;padding: 100px 0;}
+    main section#perfil article figure h3 {
+    margin: 23px 0 0 0;}
+    main section#servicios article {width: 700px; height:455px ;}
+    main section#servicios article figure {width: 320px;height: auto;padding: 42px 0 0 0;}
+    main section#servicios article figure img {width: 320px;height: auto;}
+    main section#servicios article figure a { margin: 12px 30%;}
+    main section#servicios article figure#fotografia-comercial {width: 320px;height: auto;}
+    main section#servicios article figure#fotografia-comercial img {width: 320px;height: auto;}
+    main section#servicios article figure a {margin: 12px 30%;}
+    main section#portafolio article {width: 700px;}
+    main section#portafolio article figure {width: 320px;}
+    main section#portafolio article figure#imagen-arriba {width: 320px;height: 160px;padding: 24px 0 0 0;}
+    main section#portafolio article figure#imagen-arriba img {width: 320px;height: 180px;}
+    main section#portafolio article figure#imagen-arriba {width: auto;height: auto;padding: 15px 0 0 0;}
+    main section#portafolio article figure#imagenes-abajo img {width: 160px;height: 160px;}
+    main section#portafolio article figure#imagenes-abajo {width: auto;height: auto;padding: 0;}
+    main section#contactame article {padding: 70px 0;}
+    main section#contactame article p {font-size: 1.1em;line-height: 1em;
+    padding: 0px 0 16px;}
+    main section#banner-3 article {height: 80px;}
+    main section#banner-3 article h1 {font-size: 3em;padding: 0;}
+    footer article {padding: 44px 0;}
+    main section#banner-2 article {height: 80px;}
+    main section#banner-2 article h1 {font-size: 3em;padding: 0;}
+    footer article {padding: 44px 0;}
+    main section#banner-4 article {height: 80px;}
+    main section#banner-4 article h1 {font-size: 3em;padding: 0;}
+    footer article {padding: 44px 0;}
+    main section#fotos-portafolio article {padding: 60px 0 0 0;}
+    main section#fotos-portafolio article nav a {margin: 10px;}
+    main section#fotos-portafolio { margin: 0px auto 60px;}
+
+}
+
+@media only screen and (max-width: 599px){
+    aside#menu-responsive {
+        display: block;}
+    header article figure {margin: 5px 43%;}
+    main section#banner article {height: 350px;}
+    main section#banner article a {margin: 0px 0 0 38%;}
+    main section#perfil {float: none;}
+    main section#perfil article {width: 500px;height: 700px;}
+    main section#perfil article figure {width: 400px;padding: 70px 0 0 0;float: none;}
+    main section#perfil article figure img {width: 400px;}
+    main section#perfil article figure#texto-perfil {width: 400px;padding: 0;float: none;}
+    main section#perfil article figure a {margin: 0 0 0 33%;}
+    main section#servicios article {width: 500px;height: 1000px;}
+    main section#servicios article figure {width: 400px;height: auto;padding: 42px 0 0 0;float: none;}
+    main section#servicios article figure img {width: 400px;height: auto;}
+    main section#servicios article figure a {margin: 12px 33%;}
+    main section#servicios article figure#fotografia-comercial {width: 400px;height: auto;float: none;padding: 21px 0 0 0;}
+    main section#servicios article figure#fotografia-comercial img{width: 400px;height: auto;}
+    main section#portafolio article {width: 500px;height: 750px;}
+    main section#portafolio article figure {width: 400px;height: 270px;float: none;}
+    main section#portafolio article figure a {margin: 16px 31%;}
+    main section#portafolio article figure#imagen-arriba {width: 400px;height: auto;padding: 0;float: none;}
+    main section#portafolio article figure#imagen-arriba img {width: 400px;height: 200px;}
+    main section#portafolio article figure#imagenes-abajo {width: 400px;height: 200px;padding: 0;float: none;}
+    main section#portafolio article figure#imagenes-abajo img {width: 200px;height: 200px;}
+    main section#contactame article {padding: 60px 0;}
+    main section#servicios1 article {height: 400px;}
+    main section#servicios1 article figure#img-primeras h3 {font-size: 1.2em;}
+    main section#servicios1 article figure#img-primeras p {
+    font-size: 1em;}
+    main section#servicios1 article figure#img-segundas h3 {
+    font-size: 1.2em;}
+    main section#servicios1 article figure#img-segundas p {
+    font-size: 1em;}
+    main section#servicios2 article {height: 400px;}
+    main section#servicios2 article figure#img-terceras h3 {
+    font-size: 1.2em;}
+    main section#servicios2 article figure#img-terceras p {font-size: 1em;}
+    main section#servicios2 article figure#img-cuartas h3 {
+    font-size: 1.2em;}
+    main section#servicios2 article figure#img-cuartas p {font-size: 1em;}
+    main section#fotografia-1 article {height: 340px;}
+    main section#fotografia-2 article {height: 340px;} 
+    main section#fotografia-1 article figure#fotog-1 h3 {font-size: 2em;}
+    main section#fotografia-1 article figure#fotog-2 h3 {font-size: 2em;}
+    main section#fotografia-2 article figure#fotog-3 h3 {font-size: 2em;}   
+    main section#fotografia-2 article figure#fotog-4 h3 {font-size: 2em;}
+    main section#fotos-portafolio article nav a {margin: 7px;}
+    main section#fotos-portafolio { margin: 0px auto 60px;}
+}
+    
+    /* Móviles */
+ @media only screen and (max-width: 499px){
+    aside#menu-responsive {display: block;}
+    main section#banner article h1 {font-size: 3em;}
+    main section#banner-3 article h1 {font-size: 2em;padding: 17px 0 0 0;}
+    main section#servicios1 article {height: 800px;}
+    main section#servicios1 article figure#img-primeras {width: 100%;}
+    main section#servicios1 article figure#img-segundas {width: 100%;float: left;}
+    main section#servicios1 article figure#img-primeras h3 {
+    font-size: 1.5em;}
+    main section#servicios1 article figure#img-primeras p {
+    font-size: 1.1em;}
+    main section#servicios1 article figure#img-segundas h3 {
+    font-size: 1.5em;}
+    main section#servicios1 article figure#img-segundas p {
+    font-size: 1.1em;}
+    main section#servicios2 article {height: 800px;}
+    main section#servicios2 article figure#img-terceras {width: 100%;}
+    main section#servicios2 article figure#img-cuartas {width: 100%;float: left;}
+    main section#servicios2 article figure#img-terceras h3 {
+    font-size: 1.5em;}
+    main section#servicios2 article figure#img-terceras p {
+    font-size: 1.1em;}
+    main section#servicios2 article figure#img-cuartas h3 {
+    font-size: 1.5em;}
+    main section#servicios2 article figure#img-cuartas p {
+    font-size: 1.1em;}
+    main section#banner-2 article h1 {font-size: 2em;padding: 17px 0 0 0;}
+    main section#fotografia-1 article {height: 800px;}
+    main section#fotografia-1 article figure#fotog-1 {width: 100%}
+    main section#fotografia-1 article figure#fotog-2 {width: 100%}
+    main section#fotografia-2 article {height: 800px;}
+    main section#fotografia-2 article figure#fotog-3 {width: 100%}
+    main section#fotografia-2 article figure#fotog-4 {width: 100%}
+    main section#fotos-portafolio article nav {width: 90%;}
+    main section#fotos-portafolio article nav a { margin: 10px;}
+    main section#fotos-portafolio article nav a {width: 45%;}
+    }
+@media only screen and (max-width: 399px){
+    aside#menu-responsive {display: block;}
+    aside#menu-responsive nav a {font-size: 1.3em;}
+    aside#menu-responsive nav {width: 85%;margin: 24px 0 0 0;}
+    header article {width: 35%;}
+    header article figure {margin: 5px 34%;}
+    header article {width: 60%;}
+    main section#banner {width: 100%;}
+    main section#banner article a {margin: 0px 0 0 34%;}
+    main section#perfil {width: 500px; }
+    main section#servicios {width: 500px;}
+    main section#portafolio {width: 90%px;}
+    main section#contactame {width: 100%;}
+    main section#fotografia-1 article {height: 700px;}
+    main section#fotografia-2 article {height: 700px;}
+    main section#fotos-portafolio article nav a { margin: 7px;}
+    main section#perfil {width: 100%;}
+    main section#perfil article {width: 80%;height: 650px;}
+    main section#perfil article figure {width: 100%;}
+    main section#perfil article figure img {width: 100%;}
+    main section#perfil article figure#texto-perfil {width: 100%;}
+    main section#servicios {width: 100%;}
+    main section#servicios article {width: 80%;height: 860px;}
+    main section#servicios article figure {width: 100%;}
+    main section#servicios article figure#fotografia-comercial {
+    width: 100%;}
+    main section#servicios article figure img {width: 100%;}
+    main section#servicios article figure#fotografia-comercial img {width: 100%;}
+    main section#servicios article figure a {
+        margin: 12px 30%;}
+    main section#portafolio article {width: 80%;   height: 620px;}
+    main section#portafolio article figure {width: 100%;height: auto;}
+    main section#portafolio article figure h5 {margin: 50px 0 0 0;}
+    main section#portafolio article figure#imagen-arriba {width: 100%;height: auto;}
+    main section#portafolio article figure#imagenes-abajo {width: 100%;height: auto;}
+    main section#portafolio article figure#imagen-arriba img {width: 100%;height: auto;}
+    main section#portafolio article figure#imagenes-abajo img {width: 50%;height: auto;}
+    footer {width: 100%;}
+}
